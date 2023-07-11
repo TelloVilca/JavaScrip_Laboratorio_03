@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main class="container" style="background-color: aquamarine;">
+        <section class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <form action="validacion.html" method="get" onsubmit="return validarDatos()">
+
+                    <!--* PRIMERA FILA  -->
+                    <div class="row text-center">
+                        <div class="col-12 mb-4">
+                            <h2>Validacion de Datos</h2>
+                        </div>
+                    </div>
+
+                    <!--* SEGUNDA FILA  -->
+                    <div class="row">
+
+                        <!--* DATOS "USUARIO"  -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Usuario: </label>
+                                <input type="text" id="inputUser" class="form-control" name="Usuario">
+                                <span style="display: none;" id="span_user" class="form-text">
+                                    El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y
+                                    guion
+                                    bajo.
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--* DATOS "NOMBRE"  -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nombre: </label>
+                                <input type="text" class="form-control" name="Nombre">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--* TERCERA FILA  -->
+                    <div class="row">
+
+                        <!--* DATOS "CONTRASEÑA"  -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Contraseña: </label>
+                                <input type="password" id="inputPassword" class="form-control" name="Contraseña">
+                            </div>
+                        </div>
+
+                        <!--* DATOS "REPETIR CONTRASEÑA"  -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Repetir Contraseña: </label>
+                                <input type="password" id="inputRepassword" class="form-control" name="RepetirContraseña">
+                                <span style="display: none; color: blue;" id="span_repassword" class="form-text">
+                                    Ambas contraseñas deben ser iguales.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--* ENVIO DE VALIDACION DE DATOS  -->
+                    <div class="row">
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="lab_03_JavaScript.js"></script>
+
+</body>
+
+</html>
